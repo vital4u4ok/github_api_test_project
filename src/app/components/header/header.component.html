@@ -1,0 +1,13 @@
+<div class="header">
+    <div class="container">
+        <nav class="nav-buttons-block">
+            <a class="nav-button"
+                *ngFor="let item of items"
+                routerLinkActive="active"
+                [title]="item.title"
+                [routerLink]="item.route">
+                {{item.title}}
+            </a>
+        </nav>
+   </div>
+</div>

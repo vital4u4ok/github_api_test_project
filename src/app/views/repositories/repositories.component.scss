@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+.repositories-list {
+    display: grid;
+    gap: 15px 20px;
+    padding: 16px;
+}
+
+.repository {
+    padding: 20px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    border-radius: $itemBorderRadius;
+    background: $backgroundColor;
+    box-shadow: $itemLightShadow;
+    color: $itemFontColor;
+
+    h3.name {
+        margin: 0;
+    }
+
+    .content {
+        display: flex;
+        padding: 20px;
+        padding-bottom: 0;
+
+        .image {
+            margin-right: 20px;
+            height: 200px;
+            min-width: 200px;
+            object-fit: contain;
+        }
+
+        .info {
+            .price {
+                margin: auto 20px 10px auto;
+                color: $blue;
+            }
+        }
+    }
+}
+
+.commits {
+    width: 100%;
+}
+
+@media screen and (min-width: $mobileWidth) {
+    .repositories-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

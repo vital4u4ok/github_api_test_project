@@ -1,0 +1,18 @@
+.commit {
+    margin: 10px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    border-radius: 6px;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15), 0 0 0 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.commit-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commit-content {
+    margin-top: 10px;
+}

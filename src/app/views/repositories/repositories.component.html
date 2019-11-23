@@ -1,0 +1,30 @@
+<div *ngIf="!selectedItem"
+    class="repositories-list">
+    <app-repository *ngFor="let repository of repositories"
+        [repository]="repository"
+        (selectRepository)="onSelect($event)"
+    ></app-repository>
+</div>
+
+<div *ngIf="selectedItem">
+    <app-tabs
+        [tabs]="tabs"
+        (selectTab)="onTabSelect($event)"></app-tabs>
+    <div class="repository">
+        <h3 class="name">{{selectedItem.name}}</h3>
+        <div class="content"> 
+            <div *ngIf="selectedTab === TAB.INFO" class="info">
+                <p class="description">Description: {{selectedItem.description}}</p>
+                <p class="watchers">Watchers: {{selectedItem.watchers}}</p>
+                <p class="language">Language: {{selectedItem.language}}</p>
+                <p class="homepage">Homepage: <a [href]="selectedItem.homepage">{{selectedItem.homepage}}</a></p>
+            </div>
+            <div *ngIf="selectedTab === TAB.COMMITS" class="commits">
+                <app-commit
+                    *ngFor="let commit of selectedItem.commits"
+                    [commit]="commit"
+                ></app-commit>
+            </div>
+        </div>
+    </div>  
+</div>

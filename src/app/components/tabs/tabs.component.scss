@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+.tabs {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+
+    .tab {
+        font-size: $tabFontSize;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: $tabBorderRadius;
+        background: #ffffff;
+        box-shadow: $itemLightShadow;
+        color: #393939;
+        letter-spacing: $tabLetterSpacing ;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .tab.active {
+        font-weight: bold;
+    }
+}

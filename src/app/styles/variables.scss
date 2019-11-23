@@ -1,0 +1,38 @@
+$dark                   : #3c4146;
+$white                  : #ffffff;
+$lightGrey              : #f9f9f9;
+$black                  : #393939;
+$blue                   : #4183c4;
+$lightBlue              : #4e9dea;
+
+$mobileWidth            : 768px;
+$desktopWidth           : 1200px;
+
+$headerActiveIconColor  : $lightBlue;
+$headerBackgroundColor  : $dark;
+$headerFontColor        : $lightBlue;
+
+$backgroundColor        : $white;
+
+$itemPrimaryColor       : $blue;
+$itemBackgroundColor    : $white;
+
+$textColor              : $black;
+$containerWidth         : $desktopWidth;
+
+$fontName               : 'Lato';
+$pageFont               : $fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+$tabFontSize            : 14px;
+
+$navLetterSpacing       : 3px;
+$tabLetterSpacing       : 2px;
+
+$tabBorderRadius        : 2px;
+$itemBorderRadius       : 6px;
+
+$itemFontColor          : $black;
+
+$itemLightShadow        : 0 2px 14px rgba(0,0,0,.15), 0 0 0 0.5px rgba(0,0,0,.2);
+$hoverItemShadow        : 0 2px 14px rgba(0,0,0,.15), 0 0 0 1px $black;
+$headerShadow           : 0 6px 10px rgba(0, 0, 0, 0.15);
